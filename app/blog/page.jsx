@@ -40,13 +40,15 @@ export default function BlogPage() {
             <p className="text-gray-300 leading-relaxed mb-8">
               Uma curadoria curta sobre conteúdo, design e presença digital para melhorar a comunicação da sua marca.
             </p>
-            <form className="space-y-4">
+            <form action="/api/newsletter" method="POST" className="space-y-4">
               <input
+                name="email"
                 type="email"
+                required
                 placeholder="Seu e-mail"
                 className="w-full px-6 py-4 rounded-full bg-white/10 border border-lilac/40 text-white placeholder:text-gray-400 focus:outline-none focus:border-lilac transition-colors"
               />
-              <button className="w-full px-6 py-4 bg-lilac text-black rounded-full font-bold uppercase tracking-widest hover:bg-lilac-deep hover:text-white transition-colors">
+              <button type="submit" className="w-full px-6 py-4 bg-lilac text-black rounded-full font-bold uppercase tracking-widest hover:bg-lilac-deep hover:text-white transition-colors">
                 Entrar na lista
               </button>
             </form>

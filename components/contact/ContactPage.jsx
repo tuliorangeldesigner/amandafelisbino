@@ -101,14 +101,18 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <form className="space-y-12 md:space-y-16">
+            <form action="/api/contact" method="POST" className="space-y-12 md:space-y-16">
+              <input type="hidden" name="services" value={activeServices.join(', ')} />
+              <input type="hidden" name="budget" value={activeBudget || ''} />
               <div className="grid md:grid-cols-2 gap-12">
                 <div className="group">
                   <label className="block text-xs uppercase tracking-widest text-gray-500 mb-4 group-focus-within:text-black transition-colors">
                     Seu nome
                   </label>
                   <input
+                    name="name"
                     type="text"
+                    required
                     className="w-full bg-transparent border-b border-gray-200 py-4 text-xl md:text-2xl focus:outline-none focus:border-lilac transition-colors placeholder:text-gray-300 font-serif"
                     placeholder="Nome e sobrenome"
                   />
@@ -118,7 +122,9 @@ export default function ContactPage() {
                     Melhor e-mail
                   </label>
                   <input
+                    name="email"
                     type="email"
+                    required
                     className="w-full bg-transparent border-b border-gray-200 py-4 text-xl md:text-2xl focus:outline-none focus:border-lilac transition-colors placeholder:text-gray-300 font-serif"
                     placeholder="voce@email.com"
                   />
@@ -130,6 +136,7 @@ export default function ContactPage() {
                   Perfil ou site da marca
                 </label>
                 <input
+                  name="profile"
                   type="text"
                   className="w-full bg-transparent border-b border-gray-200 py-4 text-xl md:text-2xl focus:outline-none focus:border-lilac transition-colors placeholder:text-gray-300 font-serif"
                   placeholder="@suaempresa ou seusite.com"
@@ -185,13 +192,15 @@ export default function ContactPage() {
                   Onde está o maior gargalo?
                 </label>
                 <textarea
+                  name="message"
                   rows="5"
+                  required
                   className="w-full bg-transparent border-b border-gray-200 py-4 text-xl md:text-2xl focus:outline-none focus:border-lilac transition-colors resize-none placeholder:text-gray-300 font-serif"
                   placeholder="Ex: temos conteúdo, mas o perfil não gera pedidos de orçamento..."
                 />
               </div>
 
-              <button className="group flex items-center gap-4 bg-black text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-lilac-deep transition-all duration-300">
+              <button type="submit" className="group flex items-center gap-4 bg-black text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-lilac-deep transition-all duration-300">
                 <span>Enviar contexto</span>
                 <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
               </button>

@@ -21,6 +21,7 @@ Antes de mexer, leia:
 2. `DESIGN_SYSTEM.md`
 3. `CONTENT_GUIDE.md`
 4. `DEPLOYMENT_WORKFLOW.md`
+5. `FREE_LEADS_SETUP.md` se a tarefa envolver formulario, newsletter, e-mail ou planilha de leads.
 
 ## Skill de economia de tokens
 
@@ -108,5 +109,6 @@ Projeto Vercel:
 - Projetos: `data/projects.js`, `components/home/WorkList.jsx`, `app/work/page.jsx`
 - Blog: `data/blogs.js`, `components/home/Blog.jsx`, `app/blog/page.jsx`
 - Contato: `components/contact/ContactPage.jsx`
+- Leads: `app/api/contact/route.js`, `app/api/newsletter/route.js`, `FREE_LEADS_SETUP.md`
 - Design tokens: `tailwind.config.js`
 - CSS global: `app/globals.css`
