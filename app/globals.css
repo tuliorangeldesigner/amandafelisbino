@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.premium-smooth-scroll-active body {
+  overscroll-behavior-y: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  padding-top: 0;
+}
+
+.font-script {
+  font-family: var(--font-great-vibes), cursive;
+}
+
+.font-serif-display {
+  font-family: var(--font-cormorant), serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.contact-button {
+  background-color: #C3A6CA !important;
+  border-color: #C3A6CA !important;
+  color: #111 !important;
+}
+
+.contact-button:hover {
+  background-color: #b28abc !important;
+  border-color: #b28abc !important;
+}
+
+.contact-cta-button {
+  background-color: #C3A6CA !important;
+  border: 2px solid #C3A6CA !important;
+  color: #111 !important;
+  background-image: none !important;
+}
+
+.contact-cta-button:hover {
+  background-color: #b28abc !important;
+  border-color: #b28abc !important;
+  color: #111 !important;
+  background-image: none !important;
+}
+
+/* Lebih spesifik untuk memastikan styling ter-apply */
+nav .contact-cta-button {
+  background-color: #C3A6CA !important;
+  border: 2px solid #C3A6CA !important;
+  color: #111 !important;
+}
+
+nav .contact-cta-button:hover {
+  background-color: #b28abc !important;
+  border-color: #b28abc !important;
+}
