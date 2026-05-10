@@ -13,13 +13,13 @@ Essas rotas fazem duas coisas:
 ## E-mail gratuito
 
 Destino atual:
-`contato@amandafelisbino.com`
+`tuliorangeldesigner@gmail.com`
 
 Servico:
 FormSubmit
 
 Importante:
-Na primeira submissao, o FormSubmit pode enviar um e-mail de confirmacao para `contato@amandafelisbino.com`. E preciso confirmar uma vez para liberar os proximos envios.
+Na primeira submissao, o FormSubmit pode enviar um e-mail de confirmacao para `tuliorangeldesigner@gmail.com`. E preciso confirmar uma vez para liberar os proximos envios.
 
 ## Google Sheets gratuito
 

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const contactEmail = 'contato@amandafelisbino.com'
+const contactEmail = 'tuliorangeldesigner@gmail.com'
 
 async function sendToFormSubmit(payload) {
   const formData = new FormData()
