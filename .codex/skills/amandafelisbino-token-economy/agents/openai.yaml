@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amanda Token Economy"
+  short_description: "Economize tokens em tarefas deste projeto sem reduzir qualidade."
+  default_prompt: "Use esta skill para trabalhar no projeto Amanda Felisbino com baixo consumo de contexto, mantendo qualidade, build e deploy corretos."

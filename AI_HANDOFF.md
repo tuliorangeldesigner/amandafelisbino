@@ -22,6 +22,18 @@ Antes de mexer, leia:
 3. `CONTENT_GUIDE.md`
 4. `DEPLOYMENT_WORKFLOW.md`
 
+## Skill de economia de tokens
+
+Existe uma skill especifica para este projeto:
+
+`amandafelisbino-token-economy`
+
+Locais:
+- instalada em `C:/Users/tulio/.codex/skills/amandafelisbino-token-economy`
+- versionada em `.codex/skills/amandafelisbino-token-economy`
+
+Use esta skill em tarefas futuras para reduzir leitura, logs e repeticao sem reduzir qualidade, build, GitHub ou deploy.
+
 ## Regras de trabalho
 
 - Manter o design system existente.
