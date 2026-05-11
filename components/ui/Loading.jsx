@@ -1,19 +1,25 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 export default function Loading({ onComplete }) {
   const containerRef = useRef(null);
   const textRef = useRef(null);
   const percentTextRef = useRef(null);
-  const overlayRef = useRef(null);
+  const completedRef = useRef(false);
 
   useEffect(() => {
+    const complete = () => {
+      if (completedRef.current) return;
+      completedRef.current = true;
+      if (onComplete) onComplete();
+    };
+
+    const fallbackTimer = window.setTimeout(complete, 4500);
+
     const tl = gsap.timeline({
-      onComplete: () => {
-        if (onComplete) onComplete();
-      }
+      onComplete: complete
     });
 
     // Animate percentage from 0 to 100
@@ -46,7 +52,10 @@ export default function Loading({ onComplete }) {
 
     // Optional: Animate the overlay for a split effect or just keep simple curtain
     
-    return () => tl.kill();
+    return () => {
+      window.clearTimeout(fallbackTimer);
+      tl.kill();
+    };
   }, [onComplete]);
 
   return (

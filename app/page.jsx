@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { useCallback, useState, useRef } from "react";
 import Hero from "@/components/home/Hero";
 import Manifesto from "@/components/home/Manifesto";
 import Services from "@/components/home/Services";
@@ -18,23 +17,17 @@ import Loading from "@/components/ui/Loading";
 import useGSAPLoad from "@/hooks/useGSAPLoad";
 
 export default function Home() {
-  const gsapLoaded = useGSAPLoad();
+  useGSAPLoad();
   const [loadingComplete, setLoadingComplete] = useState(false);
   const contentRef = useRef(null);
-
-  useEffect(() => {
-    // We can use this effect for other global animations if needed
-    // But Hero animation is now controlled via prop
-  }, [loadingComplete]);
-
-  if (!gsapLoaded) {
-    return null; // Or a simple spinner if needed, but Loading component handles it
-  }
+  const handleLoadingComplete = useCallback(() => {
+    setLoadingComplete(true);
+  }, []);
 
   return (
     <div ref={contentRef}>
-      {!loadingComplete && <Loading onComplete={() => setLoadingComplete(true)} />}
-      <main>
+      {!loadingComplete && <Loading onComplete={handleLoadingComplete} />}
+      <main className={loadingComplete ? "opacity-100" : "opacity-0 pointer-events-none"}>
         <Hero startAnimation={loadingComplete} />
         <Manifesto />
         <Services />
