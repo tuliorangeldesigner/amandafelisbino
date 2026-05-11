@@ -93,7 +93,7 @@ export default function Hero({ startAnimation = true }) {
                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-lilac-soft rounded-full blur-3xl opacity-80 pointer-events-none"></div>
                
                <Image
-                src="/images/amanda2.webp"
+                src="/images/Felisbino_1 (4).webp"
                 alt="Amanda Felisbino"
                 fill
                 priority

@@ -35,7 +35,7 @@ export default function ManifestoPage() {
 
         <div className="mt-24 relative h-[600px] rounded-2xl overflow-hidden">
           <Image
-            src="/images/amanda1.webp"
+            src="/images/Felisbino_1 (1).webp"
             alt="Amanda Felisbino"
             fill
             sizes="100vw"

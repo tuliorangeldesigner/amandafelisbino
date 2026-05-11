@@ -91,7 +91,7 @@ export default function Skills() {
           <div className="w-full lg:w-5/12 relative">
              <div className="skills-image relative aspect-[3/4] rounded-2xl overflow-hidden">
                <Image
-                 src="/images/amanda1.webp"
+                 src="/images/Felisbino_1 (1).webp"
                  alt="Amanda Felisbino criando conteúdo"
                  fill
                  sizes="(min-width: 1024px) 42vw, 100vw"

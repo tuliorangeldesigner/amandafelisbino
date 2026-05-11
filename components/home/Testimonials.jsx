@@ -18,7 +18,7 @@ export default function Testimonials() {
       company: 'Marca local',
       content: 'A Amanda organizou nosso Instagram e trouxe uma identidade muito mais profissional para os conteúdos.',
       rating: 5,
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face'
+      avatar: '/images/Felisbino_1 (1).webp'
     },
     {
       name: 'Cliente de Conteúdo',
@@ -26,7 +26,7 @@ export default function Testimonials() {
       company: 'Negócio digital',
       content: 'Os posts ficaram mais claros, bonitos e alinhados com o que a marca precisava comunicar.',
       rating: 5,
-      avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&crop=face'
+      avatar: '/images/Felisbino_1 (3).webp'
     },
     {
       name: 'Cliente de Identidade',
@@ -34,7 +34,7 @@ export default function Testimonials() {
       company: 'Atendimento online',
       content: 'A identidade visual deixou minha comunicação mais consistente e facilitou muito a criação dos materiais.',
       rating: 5,
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop&crop=face'
+      avatar: '/images/Felisbino_1 (4).webp'
     }
   ]
 

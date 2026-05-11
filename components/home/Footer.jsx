@@ -59,7 +59,7 @@ export default function Footer() {
         <div className="relative h-[600px] w-full grayscale hover:grayscale-0 transition-all duration-1000 ease-out order-1 lg:order-2">
           <div className="absolute inset-0 bg-gray-100 rounded-2xl overflow-hidden">
              <Image
-               src="/images/amanda2.webp"
+               src="/images/Felisbino_1 (3).webp"
                alt="Amanda Felisbino"
                fill
                sizes="(min-width: 1024px) 50vw, 100vw"

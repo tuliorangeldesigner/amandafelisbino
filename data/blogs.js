@@ -6,7 +6,7 @@ export const blogs = [
     excerpt: 'Um perfil profissional precisa de frequência, clareza visual e temas bem definidos.',
     date: 'Mai 9, 2026',
     readTime: '4 min',
-    image: '/images/amanda.webp',
+    image: '/images/blog-instagram-conteudo.webp',
     category: 'Social Media',
     author: 'Amanda Felisbino',
     content: [
@@ -35,7 +35,7 @@ export const blogs = [
     excerpt: 'Paleta, tipografia e elementos visuais ajudam a marca a ser reconhecida com mais facilidade.',
     date: 'Mai 9, 2026',
     readTime: '3 min',
-    image: '/images/amanda1.webp',
+    image: '/images/blog-design-redes.webp',
     category: 'Design',
     author: 'Amanda Felisbino',
     content: [
@@ -60,7 +60,7 @@ export const blogs = [
     excerpt: 'Roteiro, captação e edição precisam trabalhar juntos para deixar a mensagem clara.',
     date: 'Mai 9, 2026',
     readTime: '5 min',
-    image: '/images/amanda2.webp',
+    image: '/images/blog-videos-marcas.webp',
     category: 'Vídeo',
     author: 'Amanda Felisbino',
     content: [
@@ -85,7 +85,7 @@ export const blogs = [
     excerpt: 'Como equilibrar conteúdo de valor, prova, bastidores e oferta em uma rotina comercial mais natural.',
     date: 'Mai 10, 2026',
     readTime: '5 min',
-    image: '/images/amanda.webp',
+    image: '/images/blog-linha-editorial.webp',
     category: 'Estratégia',
     author: 'Amanda Felisbino',
     content: [
@@ -110,7 +110,7 @@ export const blogs = [
     excerpt: 'A primeira dobra do perfil precisa dizer quem você ajuda, como ajuda e qual ação o visitante deve tomar.',
     date: 'Mai 10, 2026',
     readTime: '3 min',
-    image: '/images/amanda1.webp',
+    image: '/images/blog-bio-instagram.webp',
     category: 'Instagram',
     author: 'Amanda Felisbino',
     content: [
@@ -135,7 +135,7 @@ export const blogs = [
     excerpt: 'Boas capas abrem curiosidade, mas a sequência precisa manter ritmo, contraste e progressão de ideias.',
     date: 'Mai 10, 2026',
     readTime: '6 min',
-    image: '/images/amanda2.webp',
+    image: '/images/blog-carrossel-retencao.webp',
     category: 'Conteúdo',
     author: 'Amanda Felisbino',
     content: [
@@ -160,7 +160,7 @@ export const blogs = [
     excerpt: 'Depoimentos, bastidores e antes e depois ajudam a transformar percepção em segurança para comprar.',
     date: 'Mai 10, 2026',
     readTime: '4 min',
-    image: '/images/amanda.webp',
+    image: '/images/blog-prova-social.webp',
     category: 'Conversão',
     author: 'Amanda Felisbino',
     content: [
@@ -185,7 +185,7 @@ export const blogs = [
     excerpt: 'Consistência depende menos de inspiração e mais de processo, repertório e formatos reaproveitáveis.',
     date: 'Mai 10, 2026',
     readTime: '5 min',
-    image: '/images/amanda1.webp',
+    image: '/images/blog-rotina-conteudo.webp',
     category: 'Planejamento',
     author: 'Amanda Felisbino',
     content: [

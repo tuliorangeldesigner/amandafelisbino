@@ -17,17 +17,18 @@ export default function WorkList({ hideHeader = false, limit }) {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Header Animation
-      gsap.from('.section-header', {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.section-header',
-          start: 'top 80%',
-        }
-      })
+      if (!hideHeader) {
+        gsap.from('.section-header', {
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.section-header',
+            start: 'top 80%',
+          }
+        })
+      }
 
       // Projects Animation
       const projectCards = gsap.utils.toArray('.project-card')
@@ -62,7 +63,7 @@ export default function WorkList({ hideHeader = false, limit }) {
     }, containerRef)
 
     return () => ctx.revert()
-  }, [])
+  }, [hideHeader])
 
   return (
     <section ref={containerRef} id="work" className="bg-white py-24 md:py-32 overflow-hidden">
@@ -106,6 +107,7 @@ export default function WorkList({ hideHeader = false, limit }) {
                        fill
                        sizes="(min-width: 1024px) 60vw, 100vw"
                        quality={72}
+                       priority={index === 0}
                        className="object-cover transition-transform duration-1000 group-hover:scale-105"
                      />
                      <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-500"></div>

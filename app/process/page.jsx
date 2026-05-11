@@ -41,7 +41,7 @@ export default function ProcessPage() {
             </div>
             <div className="h-[500px] bg-gray-100 rounded-3xl overflow-hidden relative">
                <Image
-                  src="/images/amanda1.webp"
+                  src="/images/Felisbino_1 (3).webp"
                   alt="Amanda Felisbino em processo de criação"
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
