@@ -28,6 +28,9 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata = {
   title: 'Amanda Felisbino - Social Media e Designer',
+  icons: {
+    icon: '/favicon.png',
+  },
   description: 'Portfólio de Amanda Felisbino - social media, designer e criadora de conteúdo',
 }
 
